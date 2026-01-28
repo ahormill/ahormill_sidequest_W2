@@ -63,7 +63,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(40);
 
   // --- Draw all platforms ---
   fill(255, 0, 0);
