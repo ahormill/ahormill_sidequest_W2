@@ -10,8 +10,8 @@ let blob3 = {
   // Visual properties
   r: 26, // Base radius
   points: 48, // Number of points used to draw the blob
-  wobble: 10, // Edge deformation amount
-  wobbleFreq: 0.9,
+  wobble: 12, // Edge deformation amount
+  wobbleFreq: 1.1,
 
   // Time values for breathing animation
   t: 0,
@@ -25,7 +25,7 @@ let blob3 = {
   accel: 0.55, // Horizontal acceleration
   maxRun: 4.0, // Maximum horizontal speed
   gravity: 0.65, // Downward force
-  jumpV: -11.0, // Initial jump impulse
+  jumpV: -15, // Initial jump impulse
 
   // State
   onGround: false, // True when standing on a platform
@@ -140,7 +140,7 @@ function draw() {
   drawBlobCircle(blob3);
 
   // --- HUD ---
-  fill(0);
+  fill(220, 40, 40);
   text("Move: A/D or ←/→  •  Jump: Space/W/↑  •  Land on platforms", 10, 18);
 }
 
